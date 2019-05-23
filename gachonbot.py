@@ -3,7 +3,7 @@
 from discord.ext import commands
 
 bot = commands.Bot(command_prefix=';;;')
-key = "please_type_a_discord_key"
+KEY = "please_type_a_discord_key"
 
 print('Discord Gachon-Bot Online.')
 
@@ -17,4 +17,5 @@ async def help(ctx):
 @bot.command(name="안녕")
 async def _hi(ctx):
     await ctx.send('안녕!')
+
 bot.run(KEY)
